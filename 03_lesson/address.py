@@ -7,5 +7,5 @@ class Address:
         self.apartment = apartment
 
     def __str__(self):
-        return f"Адрес проживания:{self.index}, {self.city}, {self.street}, {self.house}, {self.apartment}"
+        return f"Адрес отправления:{self.index}, {self.city}, {self.street}, {self.house}, {self.apartment}"
 
