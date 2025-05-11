@@ -8,8 +8,13 @@ class Mailing:
         self.track = track
 
     def __str__(self):
-        track_str = ", ".join([str(track) for track in self.track])
-        return f"Стоимость письма отправленого из {self.to_address} в {self.from_address} с номером ({self.track}) составляет {self.cost}"
+        return (
+            f"Отправление {self.track} из "
+            f" '{self.from_address.index}, {self.from_address.city}, {self.from_address.street}, {self.from_address.house}, {self.from_address.apartment}' "
+            f"в '{self.to_address.index}, {self.to_address.city}, {self.to_address.street}, {self.to_address.house}, {self.to_address.apartment}'. "
+            f"Стоимость {self.cost} рублей."
+        )
+
 
 
 
