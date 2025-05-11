@@ -1,19 +1,14 @@
-from adress import Address
+from address import Address
 from mailing import Mailing
 
-adress = Address("236038", "Калининград", "Юрия Гагарина", "3", "45")
-from_address1 = Address("234856", "Москва", "Дзержинского", "23", "56")
-from_address2 = Address("213456", "Зеленоград", "Погодина", "46", "789")
-from_address3 = Address("345678", "Волгоград", "Непройдёнова", "123", "345")
+to_address = Address( "785678","Санкт-Петербург", "Пограничника", "90", "65")
+from_address = Address("894565", "Москва", "Самойлова", "76", "123")
 
-cost1 = 1000
-cost2 = 900
-cost3 = 9000
-
-track1 = "234Tr56"
-track2 = "678yu5645y"
-track3 = "ghj456vv43"
-
-mailing = Mailing(adress,  [from_address1, from_address2, from_address3], [cost1, cost2, cost3], [track1, track2, track3])
+mailing = Mailing(
+    to_address = to_address,
+    from_address = from_address,
+    cost = 1340,
+    track = "ghj345dl2"
+)
 
 print(mailing)
